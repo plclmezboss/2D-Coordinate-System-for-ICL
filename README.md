@@ -22,7 +22,7 @@
 Large language models (LLMs) exhibit remarkable in-context learning (ICL) capabilities. However, the underlying working mechanism of ICL remains poorly understood. Recent research presents two conflicting views on ICL: One attributes it to LLMs' inherent ability of task recognition, deeming label correctness and shot numbers of demonstrations as not crucial; the other emphasizes the impact of similar examples in the demonstrations, stressing the need for label correctness and more shots. 
 
 <p align="center">
-  <img src="image/introduction.jpg" width="45%" />
+  <img src="image/introduction.jpg" width="70%" />
   <p align="center">An overview of the proposed two-dimensional coordinate system for ICL.</p>
 </p>
 
