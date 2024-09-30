@@ -68,3 +68,71 @@ In the third quadrant, **ICL fails to work.** Specifically, models fail to lever
 
 ### Fourth Quadrant
 In the fourth quadrant, models directly **replicate** the labels of similar examples. Therefore, the performance of ICL depends heavily on whether the labels of similar examples match the ground truth labels of test samples. Additionally, **larger models are better at recognizing similar examples**, which increases their tendency to copy the labels from these examples.
+
+## 5. Usage
+### Installation
+We have used `Python 3.9.18` with the following dependencies.
+```shell
+pip install -r requirements.txt
+```
+### PIR
+One can use **PIR** to quantify a model's ability to recognize tasks.
+```shell
+python task_recognition_pir.py \
+  --model_name={Name of the model to load} \
+  --label_index={Index of the label token} \
+  --plot_file={Name of the plot file}
+```
+
+### First Quadrant
+Through experiments with models of varying sizes, one can observe that in the setting where Similar(T) has an incorrect label, smaller models tend to replicate these incorrect labels, while larger models are more inclined to leverage their pre-trained knowledge when making predictions.
+```shell
+python first_quadrant.py \
+  --model_name={Name of the model to load} \
+  --dataset_path={Path to the dataset directory} \
+  --num_samples={Number of test samples for experimentation}
+```
+
+### Second Quadrant
+One can observe that increasing the number of in-context examples does not lead to significant changes in the performance of ICL.
+```shell
+python second_quadrant.py \
+  --model_name={Name of the model to load} \
+  --dataset_path={Path to the dataset directory} \
+  --shot_number={The number of in-context examples}
+  --num_samples={Number of test samples for experimentation}
+```
+
+### Third Quadrant
+ICL fails to work.
+```shell
+python third_quadrant.py \
+  --model_name={Name of the model to load} \
+  --dataset_path={Path to the dataset directory} \
+  --num_samples={Number of test samples for experimentation}
+```
+
+### Fourth Quadrant
+One can observe that by increasing the model size, larger models demonstrate superior capabilities in recognizing similar examples.
+```shell
+python fourth_quadrant.py \
+  --model_name={Name of the model to load} \
+  --dataset_path={Path to the dataset directory} \
+  --num_samples={Number of test samples for experimentation}
+```
+
+## 6. Citation
+```bibtex
+@misc{zhao2024unveilingincontextlearningcoordinate,
+      title={Unveiling In-Context Learning: A Coordinate System to Understand Its Working Mechanism}, 
+      author={Anhao Zhao and Fanghua Ye and Jinlan Fu and Xiaoyu Shen},
+      year={2024},
+      eprint={2407.17011},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.17011}, 
+}
+```
+
+## 7. Contact
+If you have any questions, feel free to raise an issue or contact us at <zhaoanh@my.swjtu.edu.cn>.
