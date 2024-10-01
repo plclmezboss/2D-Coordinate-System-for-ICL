@@ -123,14 +123,13 @@ python fourth_quadrant.py \
 
 ## 6. Citation
 ```bibtex
-@misc{zhao2024unveilingincontextlearningcoordinate,
-      title={Unveiling In-Context Learning: A Coordinate System to Understand Its Working Mechanism}, 
-      author={Anhao Zhao and Fanghua Ye and Jinlan Fu and Xiaoyu Shen},
-      year={2024},
-      eprint={2407.17011},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.17011}, 
+@inproceedings{
+anonymous2024a,
+title={A Coordinate System for In-Context Learning},
+author={Anonymous},
+booktitle={The 2024 Conference on Empirical Methods in Natural Language Processing},
+year={2024},
+url={https://openreview.net/forum?id=CP3Midcf8D}
 }
 ```
 
