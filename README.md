@@ -123,13 +123,11 @@ python fourth_quadrant.py \
 
 ## 6. Citation
 ```bibtex
-@inproceedings{
-anonymous2024a,
-title={A Coordinate System for In-Context Learning},
-author={Anonymous},
-booktitle={The 2024 Conference on Empirical Methods in Natural Language Processing},
-year={2024},
-url={https://openreview.net/forum?id=CP3Midcf8D}
+@inproceedings{zhao2024coordinate,
+  title={A Coordinate System for In-Context Learning},
+  author={Anhao Zhao, Fanghua Ye, Jinlan Fu, Xiaoyu Shen },
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2024},
 }
 ```
 
