@@ -5,7 +5,7 @@ import numpy as np
 from torch import nn
 
 def model_choose(model_name):
-    # only support the following models
+    # The forthcoming updated version will incorporate support for both GPT-2 and GPT-J-6B models.
     if  "Llama" or "Mistral" in model_name: 
         model, tokenizer = load_model(model_name)
         num_layers=model.config.num_hidden_layers
